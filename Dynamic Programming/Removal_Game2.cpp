@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 #define ll long long int
-
-int main()
+void solve()
 {
   int n;
   cin >> n;
@@ -40,6 +39,10 @@ int main()
   }
   // This is for 2nd player to have high score
   cout << dp[0][n - 1] << endl;
+}
+int main()
+{
+  solve();
 
   return 0;
 }

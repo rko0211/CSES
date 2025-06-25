@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main()
+void solve()
 {
-
   int a, b;
   cin >> a >> b;
   // Greedy will not work here so we have to try out all possibilities and choose the best one
@@ -33,5 +32,10 @@ int main()
   }
 
   cout << dp[a][b] << endl;
+}
+int main()
+{
+
+  solve();
   return 0;
 }

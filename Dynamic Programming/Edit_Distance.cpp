@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-int main()
+void solve()
 {
-
   string s1, s2;
   cin >> s1 >> s2;
   int n = s1.size();
@@ -38,5 +37,11 @@ int main()
     }
   }
   cout << dp[n][m] << endl;
+}
+int main()
+{
+
+  // When function call end then recursive stack space is wipe out and remove
+  solve();
   return 0;
 }
