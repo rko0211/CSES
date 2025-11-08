@@ -14,36 +14,44 @@ void solve()
     cout << "NO SOLUTION\n";
     return;
   }
-  int a[n];
+  // int a[n];
 
-  int i = 1;
-  int j = n;
+  // int i = 1;
+  // int j = n;
 
-  int x = 0;
-  while (i < j)
+  // int x = 0;
+  // while (i < j)
+  // {
+
+  //   a[x] = i;
+  //   x++;
+  //   a[x] = j;
+  //   x++;
+  //   i++;
+  //   j--;
+  // }
+  // if (n % 2 == 1)
+  // {
+  //   // x++;
+  //   a[x] = i;
+  //   swap(a[0], a[n - 1]);
+  // }
+  // else
+  // {
+  //   swap(a[0], a[n - 2]);
+  // }
+
+  // for (int k = 0; k < n; k++)
+  // {
+  //   cout << a[k] << " ";
+  // }
+  for (int i = 2; i <= n; i += 2)
   {
-
-    a[x] = i;
-    x++;
-    a[x] = j;
-    x++;
-    i++;
-    j--;
+    cout << i << " ";
   }
-  if (n % 2 == 1)
+  for (int i = 1; i <= n; i += 2)
   {
-    // x++;
-    a[x] = i;
-    swap(a[0], a[n - 1]);
-  }
-  else
-  {
-    swap(a[0], a[n - 2]);
-  }
-
-  for (int k = 0; k < n; k++)
-  {
-    cout << a[k] << " ";
+    cout << i << " ";
   }
   cout << endl;
 }
